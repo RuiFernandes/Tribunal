@@ -1,0 +1,47 @@
+Usuario{
+	String nome;
+	Date dataDeNascimento;
+	unique String username;
+	String password;
+	String categoria;
+	}
+	
+Livro{
+		unique String nome;
+		Processo *processo;
+	}
+
+Pagina{
+	String pag;
+	}
+
+Processo{
+	String numero;
+	Date data;
+	Requerente requerente;
+	Requerido requerido;
+	String auto;
+	
+		}
+				
+Requerente{
+	String nome;
+	
+	
+	}	
+	
+Requerido{ 
+	String nome;
+	
+	}	
+
+InqueritoSocial{
+	Processo processo;
+	String assistenteSocial;
+	}
+	
+Log{
+Date data;
+String log;		
+		}
+		

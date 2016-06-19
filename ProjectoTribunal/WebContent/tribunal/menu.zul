@@ -1,0 +1,30 @@
+<?page title="Auto Generated index.zul"?>
+<zk>
+	
+
+	<div vflex="true"><navbar orient="vertical" width="100%" >
+		<nav label="Livro de Entrada/Correspondencia">
+			<navitem label="Receber Documento" style="font:20px; bold:true"></navitem>
+			<navitem label="Distribuir Peticoes"></navitem>
+		</nav>
+		<nav label="Livro de Porta">
+			<navitem label="Autuar Processo"></navitem>
+			<navitem label="Lista de Processos Autuados"></navitem>
+			
+		</nav>
+		<nav label="Livro de conclusao">
+			<navitem label="Despacho de Processo"></navitem>
+			<navitem label="Lista de Despachos"></navitem>
+		</nav>
+		<nav label="Livro de vista">
+			<navitem label="Registrar Vista"></navitem>
+		</nav>
+		<nav label="Livro de Assistencia Social">
+			<navitem label="Teste"></navitem>
+		</nav>
+			<nav label="Livro de Mandato">
+			<navitem label="Teste"></navitem>
+		</nav>
+	</navbar></div>
+</zk>
+

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zk>
+    <grid hflex="true" vflex="true">
+        <columns>
+            <column width="20%" align="right" valign="middle"/>
+            <column/>
+        </columns>
+        <rows>
+            <row>
+                <label value="anonymous:"/>
+                <label value="anonymous"/>
+            </row>
+            <row>
+                <label value="Full Name:"/>
+                <textbox/>
+            </row>
+            <row>
+                <label value="Email:"/>
+                <textbox constraint="/.+@.+\.[a-z]+/: Please enter an e-mail address" width="200px"/>
+            </row>
+            <row>
+                <label value="Birthday:"/>
+                <datebox width="200px" constraint="no future"/>
+            </row>
+            <row>
+                <label value="Country:"/>
+                <listbox hflex="true" vflex="true" mold="select" name="Countries">
+                    <template>
+                        <listitem label="${each}"/>
+                    </template>
+                </listbox>
+            </row>
+        </rows>
+    </grid>
+</zk>

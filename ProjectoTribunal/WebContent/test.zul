@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zk>
+    <groupbox id="test" open="false">
+        <caption label="Click this button"> </caption>
+        <button label="Button"/>
+        <div/>
+    </groupbox>
+</zk>

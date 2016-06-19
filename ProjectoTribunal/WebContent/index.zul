@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zk>
+    <borderlayout>
+        <north size="100px" border="none">
+            <include localized="true" src="chapter1/banner.zul"/>
+        </north>
+        <center autoscroll="true" id="content">
+            <include localized="true" src="chapter1/main.zul"/>
+        </center>
+        <south size="10%" height="50px" border="none">
+            <include localized="true" src="chapter1/footer.zul"/>
+        </south>
+        <west size="25%" splittable="true" collapsible="true" border="none" minsize="300">
+            <include localized="true" src="./tribunal/menu.zul"/>
+        </west>
+    </borderlayout>
+</zk>

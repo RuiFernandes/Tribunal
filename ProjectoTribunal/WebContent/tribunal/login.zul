@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zk>
+    <space orient="vertical" height="40%"/>
+    <div align="center" hflex="true" vflex="true">
+        <vbox vflex="true" align="center" width="70%" spacing="5%">
+            <label value="Autenticacao" style="font-size:30px"/>
+            <grid>
+                <columns width="50%">
+                    <column align="right" valign="middle" width="35%"/>
+                    <column/>
+                </columns>
+                <rows>
+                    <row>
+                        <label value="Usuario :"/>
+                        <textbox id="ususario" width="80%" constraint="no empty" focus="true" popup="username"/>
+                    </row>
+                    <row>
+                        <label value="Password :"/>
+                        <textbox id="password" width="80%" constraint="no empty" type="password"/>
+                    </row>
+                    <row spans="1" valign="middle" align="center">
+                        <button label="Cancelar"/>
+                        <button label="Autenticar"/>
+                    </row>
+                </rows>
+            </grid>
+        </vbox>
+    </div>
+</zk>

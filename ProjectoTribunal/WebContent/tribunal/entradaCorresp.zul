@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zk>
+    <vlayout>
+        <hbox hflex="true">
+            <label value="Tribunal"/>
+            <label value="dos Menores"/>
+        </hbox>
+        <groupbox open="false" closable="true">
+            <caption label="Entrada de Correspondencia" style="color: #428bca;" iconSclass="z-icon-hand-o-down" vflex="true"> </caption>
+            <div>
+                <grid hflex="true" vflex="true">
+                    <columns>
+                        <column label="" width="25%" align="right"/>
+                        <column label=""/>
+                    </columns>
+                    <rows>
+                        <row>
+                            <label value="Numero :"/>
+                            <textbox disabled="true"/>
+                        </row>
+                        <row>
+                            <label value="Data de Entrada :"/>
+                            <datebox/>
+                        </row>
+                        <row>
+                            <label value="Nome do remetente :"/>
+                            <textbox width="75%"/>
+                        </row>
+                        <row>
+                            <label value="Requerent :"/>
+                            <textbox width="75%"/>
+                        </row>
+                        <row>
+                            <label value="Requerido :"/>
+                            <textbox width="75%"/>
+                        </row>
+                        <row>
+                            <label value="Resumo :"/>
+                            <textbox multiline="true" mold="rounded" width="100%" rows="2"/>
+                        </row>
+                        <row>
+                            <checkbox value="true" name="apenso" label="apenso"/>
+                            <bandbox placeholder="Processo" autodrop="true" disabled="true"/>
+                        </row>
+                    </rows>
+                </grid>
+            </div>
+            <hbox hflex="true" vflex="true">
+                <button label="Entrada" sclass="btn-primary" id="salvar"/>
+                <button label="limpar" sclass="btn-danger"/>
+            </hbox>
+        </groupbox>
+        <vbox vflex="true" hflex="true">
+            <groupbox>
+                <listbox id="box" mold="paging" pagingPosition="bottom" rows="5" multiple="true" checkmark="true">
+                    <listhead>
+                        <listheader label="numero"/>
+                        <listheader label="Auto de"/>
+                        <listheader label="Requerente"/>
+                        <listheader label="Requerido"/>
+                        <listheader label="Data"/>
+                        <listheader label="OBS"/>
+                    </listhead>
+                    <template/>
+                </listbox>
+            </groupbox>
+        </vbox>
+    </vlayout>
+</zk>

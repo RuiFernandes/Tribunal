@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zk>
+    <vlayout>
+        <hbox hflex="true">
+            <label value="Tribunal"/>
+            <label value="dos Menores"/>
+        </hbox>
+        <bandbox>
+            <bandpopup>
+                <grid hflex="true" vflex="true">
+                    <columns>
+                        <column label="Nr.Processo"/>
+                        <column label="Requerente"/>
+                        <column label="Requerido"/>
+                    </columns>
+                    <rows>
+                        <row>
+                            <label value="Value 1"/>
+                            <label value="Value 2"/>
+                            <label value="Value 3"/>
+                        </row>
+                    </rows>
+                </grid>
+            </bandpopup>
+        </bandbox> Pesquisa por: 
+        <radiogroup id="pesquisa">
+            <radio value="processo" label="Nr. Processo" selected="true" radiogroup="pesquisa"/>
+            <radio label="Requerente" value="requerente" radiogroup="pesquisa"/>
+            <radio label="Requerido" radiogroup="pesquisa"/>
+        </radiogroup>
+        <groupbox open="false" closable="true">
+            <caption label="Detalhes do processo" style="color: #428bca;" iconSclass="z-icon-hand-o-down" vflex="true"> </caption>
+            <div>
+                <grid hflex="true" vflex="true">
+                    <columns>
+                        <column label="" align="right"/>
+                        <column label=""/>
+                    </columns>
+                    <rows>
+                        <row>
+                            <label value="Numero :"/>
+                            <label value="numero-Livro"/>
+                        </row>
+                        <row>
+                            <label value="Data de Entrada :"/>
+                            <datebox constraint="no future" disabled="true"/>
+                        </row>
+                        <row>
+                            <label value="Nome do remetente :"/>
+                            <textbox width="75%"/>
+                        </row>
+                        <row>
+                            <label value="Requerent :"/>
+                            <textbox width="75%"/>
+                        </row>
+                        <row>
+                            <label value="Requerido :"/>
+                            <textbox width="75%"/>
+                        </row>
+                        <row>
+                            <label value="Resumo :"/>
+                            <textbox multiline="true" mold="rounded" width="100%" rows="2"/>
+                        </row>
+                    </rows>
+                </grid>
+            </div>
+            <hbox hflex="true" vflex="true">
+                <button label="Entrada" sclass="btn-primary" id="salvar"/>
+                <button label="limpar" sclass="btn-danger"/>
+            </hbox>
+        </groupbox>
+        <vbox vflex="true" hflex="true">
+            <groupbox>
+                <listbox id="box" mold="paging" pagingPosition="bottom" rows="5" multiple="true" checkmark="true">
+                    <listhead>
+                        <listheader label="Data"/>
+                        <listheader label="Andamento"/>
+                        <listheader label="OBS"/>
+                    </listhead>
+                    <template/>
+                </listbox>
+            </groupbox>
+        </vbox>
+        <radiogroup/>
+    </vlayout>
+    <popup id="title" width="400px">
+        <html>
+            <![CDATA[
+                Input the subject of this letter. Problem report :
+            ]]>
+        </html>
+        <toolbarbutton label="ZK Forum" target="zksandbox" href="http://www.zkoss.org/forum"/>
+    </popup>
+</zk>

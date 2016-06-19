@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zk>
+    <vbox vflex="true" hflex="true" align="center" pack="center" spacing="20px">
+        <image src="../imgs/log.JPG"/>
+       
+    </vbox>
+</zk>
